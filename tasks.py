@@ -2,7 +2,6 @@
 
 import os
 import shutil
-
 from invoke import task
 
 def remove_files_from_dir(dir):
