@@ -11920,7 +11920,6 @@ $$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Након извршавања ове ћелије систем не враћа никакав излаз.</p>
 <p>Претходни програм је у систем унео нову дефиницију: функција <code>prosek</code> ће прихватити неки низ <code>L</code> и онда ће као резултат свог рада вратити збир елемената низа <code>L</code> подељен дужином низа <code>L</code> (дакле, просек елемената тог низа).</p>
 <p>Примети да је списак Пајтон наредби које представљају <em>тело функције</em> и објашњавају шта функција ради увучен за четири празнине.</p>
 <p>Да видимо како ради наша нова функција:</p>
@@ -11963,6 +11962,129 @@ $$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>У ћелији испод унете су оцене једног ученика из информатике и приказан је њихов просек:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ocene</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prosek ocena iz informatike je&quot;</span><span class="p">,</span> <span class="n">prosek</span><span class="p">(</span><span class="n">ocene</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Prosek ocena iz informatike je 4.4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ако ћемо искрено, просек оцена се увек приказује заокружен на две децимале. У Пајтону постоји уграђена функција <code>round(x, n)</code> која заокружује дати број <code>x</code> на <code>n</code> децимала. На пример:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mf">1.666666666</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1.67</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Према томе, просек оцена из информатике сада можемо да добијемо овако:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prosek ocena iz informatike je&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">prosek</span><span class="p">(</span><span class="n">ocene</span><span class="p">),</span> <span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Prosek ocena iz informatike je 4.4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="5.3.-&#1055;&#1088;&#1080;&#1082;&#1072;&#1079;&#1080;&#1074;&#1072;&#1114;&#1077;-&#1087;&#1086;&#1076;&#1072;&#1090;&#1072;&#1082;&#1072;-&#1080;-&#1114;&#1080;&#1093;&#1086;&#1074;&#1086;&#1075;-&#1087;&#1088;&#1086;&#1089;&#1077;&#1082;&#1072;">5.3. &#1055;&#1088;&#1080;&#1082;&#1072;&#1079;&#1080;&#1074;&#1072;&#1114;&#1077; &#1087;&#1086;&#1076;&#1072;&#1090;&#1072;&#1082;&#1072; &#1080; &#1114;&#1080;&#1093;&#1086;&#1074;&#1086;&#1075; &#1087;&#1088;&#1086;&#1089;&#1077;&#1082;&#1072;<a class="anchor-link" href="#5.3.-&#1055;&#1088;&#1080;&#1082;&#1072;&#1079;&#1080;&#1074;&#1072;&#1114;&#1077;-&#1087;&#1086;&#1076;&#1072;&#1090;&#1072;&#1082;&#1072;-&#1080;-&#1114;&#1080;&#1093;&#1086;&#1074;&#1086;&#1075;-&#1087;&#1088;&#1086;&#1089;&#1077;&#1082;&#1072;">&#182;</a></h2>
 </div>
 </div>
@@ -11978,7 +12100,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predmeti</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;мат&quot;</span><span class="p">,</span> <span class="s2">&quot;срп&quot;</span><span class="p">,</span> <span class="s2">&quot;лик&quot;</span><span class="p">,</span> <span class="s2">&quot;ист&quot;</span><span class="p">,</span> <span class="s2">&quot;физ&quot;</span><span class="p">,</span> <span class="s2">&quot;муз&quot;</span><span class="p">,</span> <span class="s2">&quot;тио&quot;</span><span class="p">]</span>
@@ -12002,7 +12124,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -12024,7 +12146,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -12072,7 +12194,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">po</span> <span class="o">=</span> <span class="n">prosek</span><span class="p">(</span><span class="n">ocene</span><span class="p">)</span>
@@ -12095,7 +12217,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -12149,7 +12271,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -12198,7 +12320,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -12241,7 +12363,8 @@ $$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="5.4.-&#1047;&#1072;&#1076;&#1072;&#1094;&#1080;">5.4. &#1047;&#1072;&#1076;&#1072;&#1094;&#1080;<a class="anchor-link" href="#5.4.-&#1047;&#1072;&#1076;&#1072;&#1094;&#1080;">&#182;</a></h2>
+<h2 id="5.4.-&#1047;&#1072;&#1076;&#1072;&#1094;&#1080;">5.4. &#1047;&#1072;&#1076;&#1072;&#1094;&#1080;<a class="anchor-link" href="#5.4.-&#1047;&#1072;&#1076;&#1072;&#1094;&#1080;">&#182;</a></h2><p>Задатке уради у Џупајтеру.</p>
+
 </div>
 </div>
 </div>
@@ -12250,7 +12373,6 @@ $$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Задатак 1.</strong> Једна збирка кратких прича за децу има 12 страна - по једна прича на свакој страни. Приче имају мали број речи, и то, по странама: 271, 354, 296, 301, 333, 326, 285, 298, 327, 316, 287 и 314. Колики је просечан број речи по причи у овој књизи?</p>
-<p>(Додај ћелију испод ове, па израчунај просек користећи функцију коју смо дефинисали на почетку!)</p>
 
 </div>
 </div>
@@ -12259,9 +12381,10 @@ $$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Задатак 2.</strong> <em>(а)</em> Мирко из музичког има 5, 4, 5 и још једну оцену која се не види јер се преко ње разлило мастило. Просек његових оцена из музичког је 4. Која је то оцена преко које се разлило мастило?</p>
+<p><strong>Задатак 2.</strong></p>
+<p><em>(а)</em> Мирко из музичког има 5, 4, 5 и још једну оцену која се не види јер се преко ње разлило мастило. Просек његових оцена из музичког је 4. Која је то оцена преко које се разлило мастило?</p>
 <p><em>(б)</em> Колико још петица Мирко треба да добије да би наставница музичког за крај године морала да му закључи оцену 5? (Према Правилнику о оцењивању у основним школама, ако је просек оцена уписаних у дневник 4,50 или више, наставник <em>мора</em> да закључи оцену 5.)</p>
-<p>(Помоћ: решење задатка под <em>(а)</em> израчунај - за то ти не треба Пајтон; решење задатка под <em>(б)</em> можеш да израчунаш, али можеш и да га погодиш тако што ћеш експериментисати са разним могућностима Миркових оцена из музичког - користи функцију <code>prosek</code>.)</p>
+<p>(Помоћ: решење задатка под <em>(а)</em> израчунај - за то ти не треба Пајтон; решење задатка под <em>(б)</em> можеш да израчунаш, али можеш и да га погодиш тако што ћеш експериментисати са разним могућностима Миркових оцена из музичког - користи функцијe <code>prosek</code> и <code>round</code>.)</p>
 
 </div>
 </div>
@@ -12270,7 +12393,7 @@ $$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Задатак 3.</strong> Првих десет места на АТП листи на дан 20.6.2018. изгледа овако:</p>
+<p><strong>Задатак 3.</strong> Првих десет места на АТП листи на дан 12.11.2018. изгледа овако:</p>
 
 </div>
 </div>
@@ -12280,9 +12403,8 @@ $$</p>
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># изврши ову ћелију!</span>
-<span class="n">teniseri</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Federer&quot;</span><span class="p">,</span> <span class="s2">&quot;Nadal&quot;</span><span class="p">,</span> <span class="s2">&quot;Zverev&quot;</span><span class="p">,</span> <span class="s2">&quot;Del Potro&quot;</span><span class="p">,</span> <span class="s2">&quot;Dimitrov&quot;</span><span class="p">,</span> <span class="s2">&quot;Čilić&quot;</span><span class="p">,</span> <span class="s2">&quot;Thiem&quot;</span><span class="p">,</span> <span class="s2">&quot;Anderson&quot;</span><span class="p">,</span> <span class="s2">&quot;Goffin&quot;</span><span class="p">,</span> <span class="s2">&quot;Isner&quot;</span><span class="p">]</span>
-<span class="n">poeni</span>    <span class="o">=</span> <span class="p">[</span><span class="mi">8920</span><span class="p">,</span>      <span class="mi">8770</span><span class="p">,</span>    <span class="mi">5965</span><span class="p">,</span>     <span class="mi">5080</span><span class="p">,</span>        <span class="mi">4870</span><span class="p">,</span>       <span class="mi">4860</span><span class="p">,</span>    <span class="mi">3835</span><span class="p">,</span>    <span class="mi">3635</span><span class="p">,</span>       <span class="mi">3110</span><span class="p">,</span>     <span class="mi">3070</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">teniseri</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Đoković&quot;</span><span class="p">,</span> <span class="s2">&quot;Nadal&quot;</span><span class="p">,</span> <span class="s2">&quot;Federer&quot;</span><span class="p">,</span> <span class="s2">&quot;Del Potro&quot;</span><span class="p">,</span> <span class="s2">&quot;Zverev&quot;</span><span class="p">,</span> <span class="s2">&quot;Anderson&quot;</span><span class="p">,</span> <span class="s2">&quot;Čilić&quot;</span><span class="p">,</span> <span class="s2">&quot;Thiem&quot;</span><span class="p">,</span> <span class="s2">&quot;Nishikori&quot;</span><span class="p">,</span> <span class="s2">&quot;Isner&quot;</span><span class="p">]</span>
+<span class="n">poeni</span>    <span class="o">=</span> <span class="p">[</span><span class="mi">8045</span><span class="p">,</span>      <span class="mi">7480</span><span class="p">,</span>    <span class="mi">6020</span><span class="p">,</span>      <span class="mi">5300</span><span class="p">,</span>        <span class="mi">5085</span><span class="p">,</span>     <span class="mi">4310</span><span class="p">,</span>       <span class="mi">4050</span><span class="p">,</span>    <span class="mi">3895</span><span class="p">,</span>    <span class="mi">3390</span><span class="p">,</span>        <span class="mi">3155</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -12294,7 +12416,7 @@ $$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(а)</em> Додај нову ћелију испод ове, па у њој прикажи хистограмом податке о АТП поенима првих десет тенисера на свету, а црвеном линијом прикажи просечан број поена првих десет играча на АТП листи.</p>
+<p><em>(а)</em> Прикажи хистограмом податке о АТП поенима првих десет тенисера на свету, а црвеном линијом прикажи просечан број поена првих десет играча на АТП листи.</p>
 <p><em>(б)</em> Колико од њих је изнад просека?</p>
 
 </div>

@@ -11791,7 +11791,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="2.1.-&#1032;&#1086;&#1096;-&#1084;&#1072;&#1083;&#1086;-&#1086;-&#1039;&#1091;&#1087;&#1072;&#1112;&#1090;&#1077;&#1088;-&#1088;&#1072;&#1076;&#1085;&#1086;&#1112;-&#1089;&#1074;&#1077;&#1089;&#1094;&#1080;">2.1. &#1032;&#1086;&#1096; &#1084;&#1072;&#1083;&#1086; &#1086; &#1039;&#1091;&#1087;&#1072;&#1112;&#1090;&#1077;&#1088; &#1088;&#1072;&#1076;&#1085;&#1086;&#1112; &#1089;&#1074;&#1077;&#1089;&#1094;&#1080;<a class="anchor-link" href="#2.1.-&#1032;&#1086;&#1096;-&#1084;&#1072;&#1083;&#1086;-&#1086;-&#1039;&#1091;&#1087;&#1072;&#1112;&#1090;&#1077;&#1088;-&#1088;&#1072;&#1076;&#1085;&#1086;&#1112;-&#1089;&#1074;&#1077;&#1089;&#1094;&#1080;">&#182;</a></h2><p>Џупајтер радна свеска се састоји из низа ћелија, а свака ћелија може да садржи текст, математички израз или низ Пајтон наредби. Низ икона при врху стране ти омогућује да бараташ ћелијама Џупајтер радне свеске на разне начине.</p>
 <p>Дугме <strong>Run</strong> смо већ користили. Погледајмо сада чему служе још четири дугмета:</p>
-<p>&lt;img src = "slike/JupyterMenu4Buttons.jpg"&gt;</p>
+<p><img src="slike/JupyterMenu4Buttons.jpg" alt="Четири дугмета"></p>
 <ul>
 <li>Клик на дугме које личи на дискету (прва слева) ће снимити радну свеску.</li>
 <li>Клик на дугме са знаком <strong>+</strong> ће додати нову ћелију испод активне ћелије. (Ћелију активираш тако што кликнеш на њу; активна ћелија има <font color=green>***зелени***</font> или <font color=blue>***плави***</font> оквир.)</li>
@@ -11805,7 +11805,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>На пример, да бисмо додали нову ћелију испод ове кликнућемо на ову ћелију, па на дугме са знаком <strong>+</strong>. Онда у новој ћелији можемо нешто да израчунамо, рецимо, вредност израза $1 + \frac 12 + \frac 13 + \frac 14 + \frac 15 + \frac 16 + \frac 17$:</p>
+<p>На пример, читаш овај текст и одједном осетиш снажну жељу да израчунаш вредност израза $1 + \frac 12 + \frac 13 + \frac 14 + \frac 15 + \frac 16 + \frac 17$. Тада треба да кликнеш на ову ћелију (коју управо читаш) и онда на дугме са знаком <strong>+</strong>. У новој ћелији која ће се појавити испод можеш да унесеш израз, а Пајтон ће га израчунати:</p>
 
 </div>
 </div>
@@ -11855,7 +11855,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Низови података се у Пајтону записују унутар угластих заграда. На пример, оцене неког ученика из једног предмета могу да се запишу као низ овако:</p>
+<p>Низови података се у Пајтону записују унутар угластих заграда, у облику <em>листе</em>. На пример, оцене неког ученика из једног предмета могу да се запишу као низ овако:</p>
 
 </div>
 </div>
@@ -12033,8 +12033,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Сјеница је један од најхладнијих градова у Србији. У ћелији испод налазе се три низа података: списак имена месеци и потом максималне и минималне температуре по месецима које су забележене у Сјеници у периоду 1981-2010. године. (Подаци су преузети са сајта Републичког хидрометеоролошког завода и доступни су на адреси
-<a href="http://www.hidmet.gov.rs/latin/meteorologija/stanica_sr.php?moss_id=13369">http://www.hidmet.gov.rs/latin/meteorologija/stanica_sr.php?moss_id=13369</a>)</p>
+<p>Сјеница је један од најхладнијих градова у Србији. У ћелији испод налазе се три низа података: списак имена месеци и потом максималне и минималне температуре по месецима које су забележене у Сјеници у периоду 1981-2010. године.</p>
 
 </div>
 </div>
@@ -12058,6 +12057,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>(Подаци су преузети са сајта Републичког хидрометеоролошког завода и доступни су на адреси
+<a href="http://www.hidmet.gov.rs/latin/meteorologija/stanica_sr.php?moss_id=13369">http://www.hidmet.gov.rs/latin/meteorologija/stanica_sr.php?moss_id=13369</a>)</p>
 <p>Желели бисмо да прикажемо ове податке у виду графикона (да их <em>визуелизујемо</em>) зато што људи најлакше и најбрже обрађују визуелне податке. (Вероватно знаш за изреку да <em>једна слика вреди више од хиљаду речи</em>.)</p>
 <p>Пајтон има разне библиотеке за визуелизацију података, а ми ћемо користити библиотеку која се зове <code>matplotlib.pyplot</code>. Пошто је ово име веома дугачко и компликовано и пошто ће нам требати много функција из те библиотеке нећемо увозити функције једну по једну већ ћемо увести целу библиотеку и при томе јој дати краће име (такорећи, надимак) <code>plt</code>. (Енглеска реч <em>plot</em> значи "исцртати", а <code>plt</code> је скраћено од <code>plot</code>.)</p>
 
@@ -12290,7 +12291,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Задатак 1.</strong> Биолози су до данас описали око два милиона врта живих бића. Сва она су подељена у пет царстава и приближан број врста живих бића по царствима је дат следећом табелом:</p>
+<p>Задатке реши у Џупајтеру.</p>
+<p><strong>Задатак 1.</strong> Биолози су до данас описали око два милиона врста живих бића. Сва она су подељена у пет царстава. Њихов приближан број по царствима је дат следећом табелом:</p>
 <table>
 <thead><tr>
 <th>Царство</th>
@@ -12339,8 +12341,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># изврши ову ћелију</span>
-<span class="n">merenja</span>   <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;6 мес&quot;</span><span class="p">,</span> <span class="s2">&quot;1,5 год&quot;</span><span class="p">,</span> <span class="s2">&quot;2,5 год&quot;</span><span class="p">,</span> <span class="s2">&quot;3,5 год&quot;</span><span class="p">,</span> <span class="s2">&quot;4,5 год&quot;</span><span class="p">,</span> <span class="s2">&quot;5,5 год&quot;</span><span class="p">,</span> <span class="s2">&quot;6,5 год&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">merenja</span>   <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;6 мес&quot;</span><span class="p">,</span> <span class="s2">&quot;1,5 год&quot;</span><span class="p">,</span> <span class="s2">&quot;2,5 год&quot;</span><span class="p">,</span> <span class="s2">&quot;3,5 год&quot;</span><span class="p">,</span> <span class="s2">&quot;4,5 год&quot;</span><span class="p">,</span> <span class="s2">&quot;5,5 год&quot;</span><span class="p">,</span> <span class="s2">&quot;6,5 год&quot;</span><span class="p">]</span>
 <span class="n">masaKG</span>    <span class="o">=</span> <span class="p">[</span><span class="mf">5.9</span><span class="p">,</span>     <span class="mf">11.5</span><span class="p">,</span>      <span class="mf">14.8</span><span class="p">,</span>      <span class="mf">20.5</span><span class="p">,</span>      <span class="mf">22.0</span><span class="p">,</span>      <span class="mf">24.2</span><span class="p">,</span>      <span class="mf">29.0</span>     <span class="p">]</span>
 <span class="n">visinaCM</span>  <span class="o">=</span> <span class="p">[</span><span class="mf">62.0</span><span class="p">,</span>    <span class="mf">84.0</span><span class="p">,</span>      <span class="mf">97.0</span><span class="p">,</span>      <span class="mf">115.0</span><span class="p">,</span>     <span class="mf">122.5</span><span class="p">,</span>     <span class="mf">131.5</span><span class="p">,</span>     <span class="mf">135.0</span>    <span class="p">]</span>
 </pre></div>
@@ -12364,8 +12365,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># изврши ову ћелију</span>
-<span class="n">godina</span>                    <span class="o">=</span> <span class="p">[</span><span class="mi">2008</span><span class="p">,</span> <span class="mi">2009</span><span class="p">,</span> <span class="mi">2010</span><span class="p">,</span> <span class="mi">2011</span><span class="p">,</span> <span class="mi">2012</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="mi">2014</span><span class="p">,</span> <span class="mi">2015</span><span class="p">,</span> <span class="mi">2016</span><span class="p">,</span> <span class="mi">2017</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">godina</span>                    <span class="o">=</span> <span class="p">[</span><span class="mi">2008</span><span class="p">,</span> <span class="mi">2009</span><span class="p">,</span> <span class="mi">2010</span><span class="p">,</span> <span class="mi">2011</span><span class="p">,</span> <span class="mi">2012</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="mi">2014</span><span class="p">,</span> <span class="mi">2015</span><span class="p">,</span> <span class="mi">2016</span><span class="p">,</span> <span class="mi">2017</span><span class="p">]</span>
 <span class="n">procenatNeKoristiRac</span>      <span class="o">=</span> <span class="p">[</span><span class="mi">48</span><span class="p">,</span>   <span class="mf">44.7</span><span class="p">,</span> <span class="mf">43.7</span><span class="p">,</span> <span class="mf">40.1</span><span class="p">,</span> <span class="mf">38.9</span><span class="p">,</span> <span class="mf">36.6</span><span class="p">,</span> <span class="mf">29.7</span><span class="p">,</span> <span class="mf">28.7</span><span class="p">,</span> <span class="mf">27.2</span><span class="p">,</span> <span class="mf">26.1</span><span class="p">]</span>
 <span class="n">procenatRedovnoKoristiRac</span> <span class="o">=</span> <span class="p">[</span><span class="mf">45.5</span><span class="p">,</span> <span class="mf">49.3</span><span class="p">,</span> <span class="mf">50.8</span><span class="p">,</span> <span class="mf">54.3</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span>   <span class="mf">56.9</span><span class="p">,</span> <span class="mf">62.5</span><span class="p">,</span> <span class="mf">65.8</span><span class="p">,</span> <span class="mf">67.2</span><span class="p">,</span> <span class="mf">67.7</span><span class="p">]</span>
 <span class="n">procenatPonekadKoristiRac</span> <span class="o">=</span> <span class="p">[</span><span class="mf">6.5</span><span class="p">,</span>  <span class="mf">6.0</span><span class="p">,</span>  <span class="mf">5.5</span><span class="p">,</span>  <span class="mf">5.6</span><span class="p">,</span>  <span class="mf">6.1</span><span class="p">,</span>  <span class="mf">6.5</span><span class="p">,</span>  <span class="mf">7.8</span><span class="p">,</span>  <span class="mf">5.5</span><span class="p">,</span>  <span class="mf">5.6</span><span class="p">,</span>  <span class="mf">6.2</span><span class="p">]</span>
@@ -12380,7 +12380,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Задатак 4.</strong> На сајту Републичког хидрометеоролошког завода (<a href="http://www.hidmet.gov.rs/">http://www.hidmet.gov.rs/</a>) у менију са леве стране кликни на "Метеорологија", па "Климатологија", па на "Нормале". Потом у списку станица за осматрање који се појавио одабери станицу најближу твојој школи, преузми најниже и највише температуре у периоду 1981-2010 (редови "Апсолутни максимум" и "Апсолутни минимум") и прикажи те податке на једном графикону. <em>Ученици из Сјенице нека одаберу град по жељи!</em> Задатак реши тако што ћеш испод ове ћелије додати једну или више нових ћелија у које ћеш унети одговарајуће Пајтон команде.</p>
+<p><strong>Задатак 4.</strong> На сајту Републичког хидрометеоролошког завода (<a href="http://www.hidmet.gov.rs/">http://www.hidmet.gov.rs/</a>) у менију са леве стране кликни на "Метеорологија", па "Климатологија", па на "Нормале". Потом у списку станица за осматрање који се појавио одабери станицу најближу твојој школи, преузми најниже и највише температуре у периоду 1981-2010 (редови "Апсолутни максимум" и "Апсолутни минимум") и прикажи те податке на једном графикону. <em>Ученици из Сјенице нека одаберу град по жељи!</em></p>
 
 </div>
 </div>

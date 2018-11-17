@@ -11775,7 +11775,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="7.-&#1095;&#1072;&#1089;:-&#1059;&#1090;&#1074;&#1088;&#1106;&#1080;&#1074;&#1072;&#1114;&#1077;-&#1075;&#1088;&#1072;&#1076;&#1080;&#1074;&#1072;">7. &#1095;&#1072;&#1089;: &#1059;&#1090;&#1074;&#1088;&#1106;&#1080;&#1074;&#1072;&#1114;&#1077; &#1075;&#1088;&#1072;&#1076;&#1080;&#1074;&#1072;<a class="anchor-link" href="#7.-&#1095;&#1072;&#1089;:-&#1059;&#1090;&#1074;&#1088;&#1106;&#1080;&#1074;&#1072;&#1114;&#1077;-&#1075;&#1088;&#1072;&#1076;&#1080;&#1074;&#1072;">&#182;</a></h1><p>Сада ћемо мало застати и осврнути се на материјал са последња два часа.</p>
+<h1 id="7.-&#1095;&#1072;&#1089;:-&#1059;&#1090;&#1074;&#1088;&#1106;&#1080;&#1074;&#1072;&#1114;&#1077;-&#1075;&#1088;&#1072;&#1076;&#1080;&#1074;&#1072;">7. &#1095;&#1072;&#1089;: &#1059;&#1090;&#1074;&#1088;&#1106;&#1080;&#1074;&#1072;&#1114;&#1077; &#1075;&#1088;&#1072;&#1076;&#1080;&#1074;&#1072;<a class="anchor-link" href="#7.-&#1095;&#1072;&#1089;:-&#1059;&#1090;&#1074;&#1088;&#1106;&#1080;&#1074;&#1072;&#1114;&#1077;-&#1075;&#1088;&#1072;&#1076;&#1080;&#1074;&#1072;">&#182;</a></h1><p>Сада ћемо мало застати и осврнути се на материјал са последња два часа. Задатке реши у Џупајтеру.</p>
 
 </div>
 </div>
@@ -11809,7 +11809,6 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Милош из информатике има једну четворку и једну петицу. Ако после тога добије једну тројку, колико још петица треба да добије да би му просек оцена из информатике био барем 4,50?</p>
-<p>Додај нову ћелију испод ове и до решења дођи тако што ћеш експериментисати помоћу функције <code>prosek</code>.</p>
 
 </div>
 </div>
@@ -11830,7 +11829,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Задатак 3.</strong> Веснине оцене из информатике су дате у следежем низу:</p>
+<p><strong>Задатак 3.</strong> Веснине оцене из информатике су дате у следећем низу:</p>
 
 </div>
 </div>
@@ -11852,16 +11851,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>У ћелији испод израчунај Веснину просечну оцену из информатике и смести је у променљиву <code>po</code>:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Изврши следећу ћелију, па одговори на питања након ње:</p>
+<p>Нека је <code>po</code> променљива у коју смо сместили просек Весниних оцена:</p>
 
 </div>
 </div>
@@ -11871,8 +11861,29 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># изврши ћелију</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">po</span> <span class="o">=</span> <span class="n">prosek</span><span class="p">(</span><span class="n">ocene</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Погледај пажљиво следећу ћелију, па одговори на питања након ње:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">),</span> <span class="n">ocene</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;оцене&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">),</span> <span class="p">[</span><span class="n">po</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;просек&quot;</span><span class="p">)</span>
@@ -11897,7 +11908,7 @@ div#notebook {
 <li>Чему служи наредба <code>legend</code>? Какве она има везе са параметром <code>label</code> у функцијама <code>bar</code> и <code>plot</code>?</li>
 <li>Како би променио димензије графикона тако да он буде квадратног облика?</li>
 <li>Како би променио боју стубића у зелену?</li>
-<li>Шта значи <code>[po] * 10</code> и чему он служи у програму?</li>
+<li>Шта значи израз <code>[po] * 10</code> и чему он служи у програму?</li>
 <li>Како би уклонио легенду са графикона?</li>
 </ol>
 
@@ -11908,7 +11919,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Задатак 4.</strong> Прикажи линијским графиконом Петрове оцене из информатике једном бојом (то је онај Петар из Задатка 2), а његову просечну оцену из информатике другом бојом. (Додај нову ћелију испод ове.)</p>
+<p><strong>Задатак 4.</strong> Прикажи линијским графиконом Петрове оцене из информатике једном бојом (то је онај Петар из Задатка 2), а његову просечну оцену из информатике другом бојом.</p>
 
 </div>
 </div>
@@ -11978,8 +11989,8 @@ div#notebook {
 </tbody>
 </table>
 <p>Тако је за само седам дана Blu-ray формат победио и данас је то доминантан формат за складиштење велике количине информација на оптичким медијумима.</p>
-<p><em>(а)</em> Додај нову ћелију испод ове и направи два независна секторска дијаграма: један који показује однос ова два формата на тржишту на дан 5.1.2008, и други који показује однос ова два формата на тржишту на дан 12.1.2008.</p>
-<p><em>(б*)</em> Пробај да нађеш на Интернету шта се то десило између 5.1.2008. и 12.1.2008. (Има везе са компанијом Sony -- која је подржавала Blu-ray формат -- и једним њеним производом.)</p>
+<p><em>(а)</em> Направи два независна секторска дијаграма: један који показује однос ова два формата на тржишту на дан 5.1.2008, и други који показује однос ова два формата на тржишту на дан 12.1.2008.</p>
+<p><em>(б*)</em> Пробај да нађеш на Интернету шта се то десило између 5.1.2008. и 12.1.2008. (Има везе са компанијом Sony, која је подржавала Blu-ray формат, и једним њеним производом.)</p>
 
 </div>
 </div>
@@ -11988,7 +11999,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Задатак 7.</strong> Савршена лимунада се прави овако: једну шољу шећера размутити у једној шољи топле воде док се шећер потпуно не растопи. Сипати у то једну шољу сока од лимуна и додати још три шоље хладне воде. Израчунати у процентима количину воде, шећера и сока од лимуна у савршеној лимунади и приказати те податке секторским дијаграмом, али тако да податак који представља количину шећера буде издвојен. (Додај нову ћелију испод ове.)</p>
+<p><strong>Задатак 7.</strong> Савршена лимунада се прави овако: једну шољу шећера размутити у једној шољи топле воде док се шећер потпуно не растопи. Сипати у то једну шољу сока од лимуна и додати још три шоље хладне воде. Израчунати у процентима количину воде, шећера и сока од лимуна у савршеној лимунади и приказати те податке секторским дијаграмом, али тако да податак који представља количину шећера буде издвојен.</p>
 
 </div>
 </div>
@@ -12029,7 +12040,6 @@ div#notebook {
 <p>ће утврдити број нула. Обрати пажњу на то да је нула под наводницима, <em>јер се ради са стринговима!</em>)</p>
 <p><em>(в)</em> Представи број нула, јединица, двојки, ..., деветки које си добио под (б) у процентима.</p>
 <p><em>(г)</em> Прикажи добијене податке секторским дијаграмом.</p>
-<p>(Немој ништа радити ручно! Додај неколико нових ћелија испод ове и нека Пајтон рачуна за тебе!)</p>
 
 </div>
 </div>
