@@ -12,7 +12,7 @@ def remove_files_from_dir(dir):
             os.unlink(fpath)
 
 @task 
-def build(c, clean=False):
+def build(c, clean=False, basic=False):
     base_dir = c.config._project_prefix
     build_dir = os.path.join(base_dir, 'HTML')
     img_src_dir = os.path.join(base_dir, 'slike')
@@ -28,5 +28,9 @@ def build(c, clean=False):
         print(f"copy {fsrc} -> {fdst}")
         shutil.copyfile(fsrc, fdst)
 
+    if basic:
+        tmpl = '--template basic'
+    else:
+        tmpl = '--template full'
     with c.cd(base_dir):
-        c.run(f"jupyter nbconvert --to html *.ipynb --output-dir {build_dir}")
+        c.run(f"jupyter nbconvert --to html {tmpl} *.ipynb --output-dir {build_dir}")
